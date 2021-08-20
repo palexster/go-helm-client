@@ -689,6 +689,7 @@ func mergeInstallOptions(chartSpec *ChartSpec, installOptions *action.Install) {
 	installOptions.SkipCRDs = chartSpec.SkipCRDs
 	installOptions.DryRun = chartSpec.DryRun
 	installOptions.SubNotes = chartSpec.SubNotes
+	installOptions.CreateNamespace = chartSpec.CreateNamespace
 }
 
 // mergeUpgradeOptions merges values of the provided chart to helm upgrade options used by the client
